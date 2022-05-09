@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="lb" type="RESOURCE"/>
+  <resource name="lj" type="RESOURCE"/>
+  <resource name="ch" type="RESOURCE"/>
+</resources>

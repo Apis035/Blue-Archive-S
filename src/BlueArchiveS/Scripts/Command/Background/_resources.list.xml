@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg" type="RESOURCE"/>
+  <resource name="bfi" type="RESOURCE"/>
+  <resource name="bfo" type="RESOURCE"/>
+  <resource name="bsc" type="RESOURCE"/>
+  <resource name="bmv" type="RESOURCE"/>
+  <resource name="bpf" type="RESOURCE"/>
+</resources>

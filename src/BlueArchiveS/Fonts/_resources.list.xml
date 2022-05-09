@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="NotoSans16Bold" type="RESOURCE"/>
+  <resource name="NotoSans20" type="RESOURCE"/>
+  <resource name="NotoSans20Bold" type="RESOURCE"/>
+  <resource name="NotoSans26Bold" type="RESOURCE"/>
+  <resource name="NotoSans30Bold" type="RESOURCE"/>
+  <resource name="NotoSans40Bold" type="RESOURCE"/>
+  <resource name="System" type="RESOURCE"/>
+</resources>

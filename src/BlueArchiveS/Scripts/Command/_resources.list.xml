@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="General" type="GROUP"/>
+  <resource name="Branching" type="GROUP"/>
+  <resource name="Background" type="GROUP"/>
+  <resource name="Character" type="GROUP"/>
+  <resource name="Dialog" type="GROUP"/>
+  <resource name="Audio" type="GROUP"/>
+  <resource name="Screen" type="GROUP"/>
+</resources>

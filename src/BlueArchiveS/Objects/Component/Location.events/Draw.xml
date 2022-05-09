@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if location = "" exit
+
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
+draw_set_font(NotoSans20Bold)
+
+//Box
+draw_set_alpha(0.5 * alpha)
+draw_set_color(c_gui)
+draw_roundrect(-10, 100, 100 + string_width(location) + 40, 100 + string_height(location) + 10, false)
+
+//Text
+draw_set_alpha(alpha)
+draw_set_color(c_white)
+draw_text(100, 100 + 5, location)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

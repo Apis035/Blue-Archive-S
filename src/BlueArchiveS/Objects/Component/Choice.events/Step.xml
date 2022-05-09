@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if choice[0] = "" exit
+
+var i, pos;
+
+//Get label jumps
+if !init {
+    init = true
+    
+    for (i=0; i&lt;3; i+=1) {
+        if choice[i] = "" break
+
+        if string_char_at(choice[i], 1) = '#' {
+            pos = 1
+            while string_length(string_digits(string_char_at(choice[i], pos+1))) pos += 1
+            
+            jump[i]   = real(string_copy(choice[i], 2, pos))
+            choice[i] = string_delete(choice[i], 1, pos+1)
+        } else {
+            jump[i] = label
+        }
+    }
+}
+
+//Determine which button is currently hovered
+hover = -1
+for (i=0; i&lt;3; i+=1) {
+    if choice[i] = "" break
+    if pointin(mouse_x, mouse_y, x-width, y-height+(spacing * i), x+width, y+height+(spacing * i)) 
+        hover = i
+}
+
+//Click on a button
+if mouse_check_button_pressed(mb_left) and hover != -1 {
+    if jump[hover] != label
+        step = 1
+    label = jump[hover]
+    init  = false
+    Parser.pending = false
+
+    for (i=0; i&lt;3; i+=1) {
+        choice[i] = ""
+        jump[i]   = -1
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

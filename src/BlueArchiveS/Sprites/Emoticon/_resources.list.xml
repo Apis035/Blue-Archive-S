@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sEmAction" type="RESOURCE"/>
+  <resource name="sEmAggro" type="RESOURCE"/>
+  <resource name="sEmAnxiety" type="RESOURCE"/>
+  <resource name="sEmBaloon" type="RESOURCE"/>
+  <resource name="sEmBaloonThink" type="RESOURCE"/>
+  <resource name="sEmChat" type="RESOURCE"/>
+  <resource name="sEmExclamation1" type="RESOURCE"/>
+  <resource name="sEmExclamation2" type="RESOURCE"/>
+  <resource name="sEmHeart" type="RESOURCE"/>
+  <resource name="sEmIdea" type="RESOURCE"/>
+  <resource name="sEmNote" type="RESOURCE"/>
+  <resource name="sEmQuestion1" type="RESOURCE"/>
+  <resource name="sEmQuestion2" type="RESOURCE"/>
+  <resource name="sEmShy" type="RESOURCE"/>
+  <resource name="sEmSweat1" type="RESOURCE"/>
+  <resource name="sEmSweat2" type="RESOURCE"/>
+  <resource name="sEmTwinkle" type="RESOURCE"/>
+</resources>

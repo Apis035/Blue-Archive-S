@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Background
+background = -1
+
+//Darken background when title is active
+alphaDim = 0.6
+
+//Alpha
+alpha    = 0
+alphaTo  = 0
+alphaSpd = 0
+
+//Scale
+scale    = 1
+scaleTo  = 1
+scaleSpd = 0
+
+//Position
+x       = room_width/2
+y       = room_height/2
+xTo     = x
+yTo     = y
+moveSpd = 0
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

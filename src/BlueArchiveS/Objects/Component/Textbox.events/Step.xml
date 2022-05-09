@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Textbox alpha
+if alphaSpd = 0
+    alpha = alphaTo
+else
+    alpha = approach(alpha, alphaTo, alphaSpd)
+
+//Clear text when textbox alpha is 0
+if alpha = 0 {
+    name     = ""
+    affi     = ""
+    drawText = ""
+}
+
+//Text
+if text = "" exit
+
+if !init {
+    init = true
+    pos  = 0
+    len  = string_length(text)
+}
+
+//Advance dialog
+if mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter) {
+    if pos = len {
+        init = false
+        text = ""
+        Parser.pending = false
+    } else {
+        pos = len - 1
+    }
+}
+
+//Typewriter effect
+if pos &lt; len {
+    pos     += textSpd
+    drawText = string_copy(text, 0, pos)
+}
+
+//Advance icon
+nextCycle += 0.1
+if nextCycle &gt; pi2
+    nextCycle -= pi2
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Location" type="RESOURCE"/>
+  <resource name="Title" type="RESOURCE"/>
+  <resource name="Screen" type="RESOURCE"/>
+  <resource name="Choice" type="RESOURCE"/>
+  <resource name="Textbox" type="RESOURCE"/>
+  <resource name="Character" type="RESOURCE"/>
+  <resource name="BG" type="RESOURCE"/>
+  <resource name="BGM" type="RESOURCE"/>
+</resources>

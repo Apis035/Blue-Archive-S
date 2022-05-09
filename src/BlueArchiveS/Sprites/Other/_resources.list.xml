@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sHelmetBlack" type="RESOURCE"/>
+  <resource name="sHelmetBlackHalo" type="RESOURCE"/>
+  <resource name="sHelmetRed" type="RESOURCE"/>
+  <resource name="sHelmetRedHalo" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if alpha = 0 exit
+
+var _alpha, _scale;
+
+//Focusing
+_alpha = max(0.6, focus) * alpha
+
+//Dim to black
+_alpha = make_color_rgb(255 * _alpha, 255 * _alpha, 255 * _alpha)
+
+//Scale
+_scale = scale * global.GameScale
+
+//Halo
+if halo != -1
+    draw_sprite_ext(halo, 0, x, y + sin(haloCycle)*4 * _scale, _scale, _scale, 0, _alpha, 1)
+
+//Body
+if body != -1
+    draw_sprite_ext(body, 0, x, y, _scale, _scale, 0, _alpha, 1)
+
+//Face
+if face != -1
+    draw_sprite_ext(face, expr, x, y, _scale, _scale, 0, _alpha, 1)
+
+//Extra
+if extra != -1
+    draw_sprite_ext(extra, 0, x, y, _scale, _scale, 0, _alpha, 1)
+
+//Emoticon
+/* TODO: Should emoticon scaled with character scaling? */
+
+switch em {
+case em_angry:    emReset()   break
+case em_chat:     emReset()   break
+case em_dot:      emDot()     break
+case em_exclaim:  emExclaim() break
+case em_heart:    emHeart()   break
+case em_music:    emMusic()   break
+case em_question: emQuestion()   break
+case em_respond:  emRespond() break
+case em_shy:      emShy()     break
+case em_surprise: emSurprise()   break
+case em_sweat:    emSweat()   break
+case em_twinkle:  emTwinkle()   break
+case em_upset:    emReset()   break
+}
+
+if em != em_none
+    emCycle += 1
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

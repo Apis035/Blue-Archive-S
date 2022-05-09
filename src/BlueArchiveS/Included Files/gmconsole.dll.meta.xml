@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<include>
+  <filename>GMconsole.dll</filename>
+  <filepath>Z:\GMconsole.dll</filepath>
+  <original>true</original>
+  <originalSize>4608</originalSize>
+  <hasContent>true</hasContent>
+  <exportTo>TEMP_DIRECTORY</exportTo>
+  <otherExportDirectory/>
+  <overwriteExisting>false</overwriteExisting>
+  <freeMemAfterExport>true</freeMemAfterExport>
+  <removeAtGameEnd>true</removeAtGameEnd>
+</include>

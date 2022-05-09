@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">var i, color;
+
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+
+for (i=0; i&lt;3; i+=1) {
+    if choice[i] = "" break
+    
+    //Hover color
+    color = colorNormal
+    draw_set_alpha(.8)
+    if hover = i {
+        draw_set_alpha(.9)
+        color = colorHover
+    }
+
+    //Button
+    draw_set_color(color)
+    draw_roundrect(x-width, y-height+(spacing * i), x+width, y+height+(spacing * i), false)
+    //draw_set_color(c_black)
+    //draw_roundrect(x-width, y-height+(spacing * i), x+width, y+height+(spacing * i), true)
+    
+    //Text
+    draw_set_color(c_black)
+    draw_set_alpha(1)
+    draw_text(x, y+(spacing * i), choice[i])
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

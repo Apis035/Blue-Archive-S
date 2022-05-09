@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Debug
+if !global.Debug
+    exit
+
+var text;
+text = "Fps: " + string(fps)
+draw_set_color(c_black)
+draw_set_alpha(.5)
+draw_set_font(System)
+draw_rectangle(0, 0, string_width(text) + 8, string_height(text), false)
+drawset(fa_left, fa_top, c_white, 1)
+draw_text(4, 0, text)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

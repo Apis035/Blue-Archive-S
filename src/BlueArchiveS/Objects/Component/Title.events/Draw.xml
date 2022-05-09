@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if title1 = "" exit
+
+//Box
+draw_set_alpha(alpha)
+draw_rectangle_color(100, 420, room_width/2, room_height - 420, c_ltgray, c_white, c_white, c_ltgray, false)
+draw_rectangle_color(room_width/2 + 1, 420, room_width-100, room_height - 420, c_white, c_ltgray, c_ltgray, c_white, false)
+
+draw_set_alpha(.5)
+draw_set_color(c_white)
+draw_rectangle(100, 100, room_width-100, room_height-100, true)
+
+//Text
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_set_alpha(1)
+
+draw_set_color(c_title1)
+draw_set_font(NotoSans30Bold)
+draw_text(room_width/2, room_height/2 - 58, title1)
+
+draw_set_color(c_title2)
+draw_set_font(NotoSans40Bold)
+draw_text(room_width/2, room_height/2 + 30, title2)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Viewer mode
+/*if instance_exists(Viewer) {
+    sprite_index  = body
+    image_xscale  = scale
+    image_yscale  = scale
+    expressionMax = sprite_get_number(face) - 1
+}*/
+
+//Alpha
+if alphaSpd = 0
+    alpha = alphaTo
+else
+    alpha = approach(alpha, alphaTo, alphaSpd)
+
+//Scale
+if scaleSpd = 0
+    scale = scaleTo
+else
+    scale = lerp(scale, scaleTo, scaleSpd)
+
+//Position
+if moveSpd = 0 {
+    x = xTo
+    y = yTo
+} else {
+    x = lerp(x, xTo, moveSpd)
+    y = lerp(y, yTo, moveSpd)
+}
+
+//Halo hovering
+haloCycle += haloSpd
+if haloCycle &gt; pi2
+    haloCycle -= pi2
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

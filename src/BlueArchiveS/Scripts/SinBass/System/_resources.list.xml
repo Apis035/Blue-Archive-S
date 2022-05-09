@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sinBassInit" type="RESOURCE"/>
+  <resource name="sinBassClose" type="RESOURCE"/>
+  <resource name="sinBassGetDevice" type="RESOURCE"/>
+  <resource name="sinBassSetDevice" type="RESOURCE"/>
+  <resource name="sinBassGetCPU" type="RESOURCE"/>
+  <resource name="sinBassGetGlobalVolume" type="RESOURCE"/>
+  <resource name="sinBassSetGlobalVolume" type="RESOURCE"/>
+  <resource name="sinBassGetMasterVolume" type="RESOURCE"/>
+  <resource name="sinBassSetMasterVolume" type="RESOURCE"/>
+  <resource name="sinBassErrorGetCode" type="RESOURCE"/>
+</resources>

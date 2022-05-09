@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="tfi" type="RESOURCE"/>
+  <resource name="tfo" type="RESOURCE"/>
+  <resource name="say" type="RESOURCE"/>
+  <resource name="foc" type="RESOURCE"/>
+</resources>

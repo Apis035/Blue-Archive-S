@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Character identity
+name = ""
+affi = ""
+
+//Bodypart sprites
+body  = -1
+face  = -1
+halo  = -1
+extra = -1
+
+//Expression
+expr    = 0
+exprMax = 0
+
+//Emoticon (WIP)
+emReset()
+
+//Perform animation (WIP)
+perform      = 0
+performCycle = 0
+
+//Alpha
+alpha    = 0
+alphaTo  = 0
+alphaSpd = 0
+
+//Scale
+scale      = 1
+scaleTo    = 1
+scaleSpd = 0
+
+//Position
+x       = room_width/2
+y       = room_height/3
+xTo     = x
+yTo     = y
+moveSpd = 0
+
+//Halo hovering
+haloCycle = random(pi2)
+haloSpd   = 0.03
+
+//Dialog focusing
+focus = true
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

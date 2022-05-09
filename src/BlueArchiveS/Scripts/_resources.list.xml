@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="config" type="RESOURCE"/>
+  <resource name="charList" type="RESOURCE"/>
+  <resource name="resourceLoad" type="RESOURCE"/>
+  <resource name="resourceExport" type="RESOURCE"/>
+  <resource name="sceneTest" type="RESOURCE"/>
+  <resource name="scene01" type="RESOURCE"/>
+  <resource name="Emoticon" type="GROUP"/>
+  <resource name="Command" type="GROUP"/>
+  <resource name="Function" type="GROUP"/>
+  <resource name="Utility" type="GROUP"/>
+  <resource name="SinBass" type="GROUP"/>
+  <resource name="Console" type="GROUP"/>
+</resources>

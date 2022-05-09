@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sShiroko" type="RESOURCE"/>
+  <resource name="sShirokoFace" type="RESOURCE"/>
+  <resource name="sShirokoHalo" type="RESOURCE"/>
+  <resource name="sAyane" type="RESOURCE"/>
+  <resource name="sAyaneFace" type="RESOURCE"/>
+  <resource name="sAyaneHalo" type="RESOURCE"/>
+  <resource name="sAyaneGlasses" type="RESOURCE"/>
+  <resource name="sSerika" type="RESOURCE"/>
+  <resource name="sSerikaFace" type="RESOURCE"/>
+  <resource name="sSerikaHalo" type="RESOURCE"/>
+  <resource name="sNonomi" type="RESOURCE"/>
+  <resource name="sNonomiFace" type="RESOURCE"/>
+  <resource name="sNonomiHalo" type="RESOURCE"/>
+  <resource name="sNonomiHair" type="RESOURCE"/>
+  <resource name="sHoshino" type="RESOURCE"/>
+  <resource name="sHoshinoFace" type="RESOURCE"/>
+  <resource name="sHoshinoHalo" type="RESOURCE"/>
+  <resource name="sHoshinoHair" type="RESOURCE"/>
+</resources>

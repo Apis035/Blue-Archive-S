@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="emReset" type="RESOURCE"/>
+  <resource name="emDot" type="RESOURCE"/>
+  <resource name="emExclaim" type="RESOURCE"/>
+  <resource name="emHeart" type="RESOURCE"/>
+  <resource name="emMusic" type="RESOURCE"/>
+  <resource name="emQuestion" type="RESOURCE"/>
+  <resource name="emRespond" type="RESOURCE"/>
+  <resource name="emShy" type="RESOURCE"/>
+  <resource name="emSurprise" type="RESOURCE"/>
+  <resource name="emSweat" type="RESOURCE"/>
+  <resource name="emTwinkle" type="RESOURCE"/>
+</resources>

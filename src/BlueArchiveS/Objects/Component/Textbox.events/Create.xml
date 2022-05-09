@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">init = false
+
+//Alpha
+alpha      = 0
+alphaTo    = 0
+alphaSpd = 0
+
+//Textbox size
+height = room_height/4 * 3
+border = room_width/6
+
+//Advance dialog icon
+nextCycle = 0
+
+//Dialog text
+name     = ""
+affi     = ""
+text     = ""
+drawText = ""
+pos      = 0
+len      = 0
+textSpd  = 0.5
+
+//Character focusing
+focus = false
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Easing" type="GROUP"/>
+  <resource name="pointin" type="RESOURCE"/>
+  <resource name="pathf" type="RESOURCE"/>
+  <resource name="drawset" type="RESOURCE"/>
+  <resource name="approach" type="RESOURCE"/>
+  <resource name="lerp" type="RESOURCE"/>
+</resources>

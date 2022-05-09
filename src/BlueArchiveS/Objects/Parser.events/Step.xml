@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Wait timer
+if wait &gt; 0
+    wait -= 1
+
+if pending or wait or op[label, step] = ""
+    exit
+
+//Parse and execute scene script
+do {
+    //Shorthand variable
+    arg1 = a1[label, step]
+    arg2 = a2[label, step]
+    arg3 = a3[label, step]
+
+    switch op[label, step] {
+
+    // --- General ---
+    case "tit":
+        Title.title1 = arg1
+        Title.title2 = arg2
+        pending = true
+        break
+
+    case "loc":
+        Location.location = arg1
+        break
+
+    case "wai":
+        wait = arg1
+        break
+    
+    // --- Branching ---
+    case "lj":
+        label = arg1
+        step  = 0
+        break
+
+    case "ch":
+        Choice.choice[0] = arg1
+        Choice.choice[1] = arg2
+        Choice.choice[2] = arg3
+        pending = true
+        break
+
+    // --- Background ---
+    case "bg":
+        BG.background = arg1
+        BG.scale      = BG.scaleTo
+        break
+
+    case "bfi":
+        BG.alphaTo  = 1
+        BG.alphaSpd = arg1
+        break
+
+    case "bfo":
+        BG.alphaTo  = 0
+        BG.alphaSpd = arg1
+        break
+
+    case "bsc":
+        BG.scaleTo  = arg1
+        BG.scaleSpd = arg2
+        break
+
+    case "bmv":
+        BG.xTo     = arg1
+        BG.yTo     = arg2
+        BG.moveSpd = arg3
+        break
+
+    case "bpf":
+        BG.perform = arg1
+        break
+
+    // --- Character ---
+    case "cfi":
+        arg1.alphaTo  = 1
+        arg1.alphaSpd = arg2
+        break
+
+    case "cfo":
+        arg1.alphaTo  = 0
+        arg1.alphaSpd = arg2
+        break
+
+    case "csc":
+        arg1.scaleTo  = arg2
+        arg1.scaleSpd = arg3
+        break
+
+    case "cmv":
+        arg1.xTo     = arg2
+        arg1.moveSpd = arg3
+        break
+
+    case "cex":
+        arg1.expr = arg2
+        break
+
+    case "cem":
+        with arg1 emReset()
+        arg1.em = arg2
+        sinBassSamplePlay(emSfx[arg2])
+        break
+
+    case "cpf":
+        arg1.perform = arg2
+        break
+
+    // --- Textbox ---
+    case "tfi":
+        Textbox.alphaTo  = 1
+        Textbox.alphaSpd = arg1
+        break
+
+    case "tfo":
+        Textbox.alphaTo  = 0
+        Textbox.alphaSpd = arg1
+        break
+
+    case "say":
+        if Textbox.focus with Character {
+            focus = true
+            if name != other.arg1
+                focus = false
+        }
+        Textbox.name = arg1
+        Textbox.affi = arg2
+        Textbox.text = arg3
+        pending = true
+        break
+
+    case "foc":
+        Textbox.focus = !Textbox.focus
+        with Character focus = true
+        break
+
+    // --- Sound ---
+    case "mus":
+        if arg1 &gt; 0 {
+            sinBassStreamLoop(arg1)
+            sinBassStreamSetVolume(arg1, 0)
+            if arg2 &gt; 0
+                sinBassStreamFadeVolume(arg1, global.BgmVolume, arg2)
+            else
+                sinBassStreamSetVolume(arg1, global.BgmVolume)
+            currentMusic = arg1
+        } else {
+            if arg2 &gt; 0 {
+                sinBassStreamFadeVolume(currentMusic, 0, arg2)
+                alarm[0] = arg2/1000 * 60 + 1
+            } else
+                sinBassStreamStop(currentMusic)
+            currentMusic = 0
+        }
+        break
+
+    case "sfx":
+        sinBassSamplePlay(arg1)
+        sinBassSampleSetVolume(arg1, global.SfxVolume)
+        break
+
+    // --- Screen ---
+    case "sfw":
+        if Screen.alpha = 1
+            break
+        Screen.color    = c_white
+        Screen.alphaTo  = 1
+        Screen.alphaSpd = arg1
+        pending = true
+        break
+
+    case "sfb":
+        if Screen.alpha = 1
+            break
+        Screen.color    = c_black
+        Screen.alphaTo  = 1
+        Screen.alphaSpd = arg1
+        pending = true
+        break
+
+    case "sfn":
+        if Screen.alpha = 0
+            break
+        Screen.alphaTo  = 0
+        Screen.alphaSpd = arg1
+        pending = true
+        break
+    }
+
+    //Debug: Log the currently processed command
+    if global.Debug {
+        var str; str =
+            "[" + string(label) + ", " + string(step) + "] " +
+            string(op[label, step]) + " | " +
+            string(a1[label, step]) + " | " +
+            string(a2[label, step]) + " | " +
+            string(a3[label, step])
+        //room_caption = "Blue Archive S " + str
+        log(str)
+    }
+    
+    //Next step
+    step += 1
+
+} until pending or wait
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

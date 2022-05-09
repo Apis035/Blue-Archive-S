@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sfw" type="RESOURCE"/>
+  <resource name="sfb" type="RESOURCE"/>
+  <resource name="sfn" type="RESOURCE"/>
+</resources>

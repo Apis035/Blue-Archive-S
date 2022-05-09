@@ -1,0 +1,1 @@
+return external_call(global._sinbass_stream_pan_is_fading,argument0)

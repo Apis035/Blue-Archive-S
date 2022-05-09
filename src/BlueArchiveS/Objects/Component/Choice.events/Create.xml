@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">init = false
+
+x = room_width/2
+y = room_height/3
+
+//Init buttons
+hover = -1
+var i;
+for (i=0; i&lt;3; i+=1) {
+    choice[i] = ""
+    jump[i]   = -1
+}
+
+//Button properties
+width       = 560
+height      = 34
+spacing     = 100
+colorNormal = make_color_rgb(230, 230, 230)
+colorHover  = make_color_rgb(255, 255, 255)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

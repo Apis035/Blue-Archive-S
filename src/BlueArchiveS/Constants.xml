@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<constants>
+  <constant name="pi2" value="6.2831853070"/>
+  <constant name="em_none" value="0"/>
+  <constant name="em_angry" value="1"/>
+  <constant name="em_chat" value="2"/>
+  <constant name="em_dot" value="3"/>
+  <constant name="em_exclaim" value="4"/>
+  <constant name="em_heart" value="5"/>
+  <constant name="em_music" value="6"/>
+  <constant name="em_question" value="7"/>
+  <constant name="em_respond" value="8"/>
+  <constant name="em_shy" value="9"/>
+  <constant name="em_surprise" value="10"/>
+  <constant name="em_sweat" value="11"/>
+  <constant name="em_twinkle" value="12"/>
+  <constant name="em_upset" value="13"/>
+  <constant name="pf_nod" value="0"/>
+  <constant name="pf_shake" value="1"/>
+  <constant name="pf_shake2" value="2"/>
+  <constant name="pf_down" value="3"/>
+  <constant name="pf_jump" value="4"/>
+</constants>

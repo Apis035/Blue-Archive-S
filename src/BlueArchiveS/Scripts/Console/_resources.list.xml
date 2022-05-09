@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="consoleInit" type="RESOURCE"/>
+  <resource name="consoleRead" type="RESOURCE"/>
+  <resource name="consolePrint" type="RESOURCE"/>
+  <resource name="consoleFree" type="RESOURCE"/>
+  <resource name="consoleTitle" type="RESOURCE"/>
+  <resource name="consoleColor" type="RESOURCE"/>
+  <resource name="consoleHide" type="RESOURCE"/>
+  <resource name="consoleShow" type="RESOURCE"/>
+</resources>

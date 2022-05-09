@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="tit" type="RESOURCE"/>
+  <resource name="loc" type="RESOURCE"/>
+  <resource name="wai" type="RESOURCE"/>
+</resources>

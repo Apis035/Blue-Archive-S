@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="new" type="RESOURCE"/>
+  <resource name="cfi" type="RESOURCE"/>
+  <resource name="cfo" type="RESOURCE"/>
+  <resource name="csc" type="RESOURCE"/>
+  <resource name="cmv" type="RESOURCE"/>
+  <resource name="cex" type="RESOURCE"/>
+  <resource name="cem" type="RESOURCE"/>
+  <resource name="cpf" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sinBassSampleLoad" type="RESOURCE"/>
+  <resource name="sinBassSamplePlay" type="RESOURCE"/>
+  <resource name="sinBassSampleStop" type="RESOURCE"/>
+  <resource name="sinBassSampleFree" type="RESOURCE"/>
+  <resource name="sinBassSampleSetVolume" type="RESOURCE"/>
+  <resource name="sinBassSampleGetVolume" type="RESOURCE"/>
+  <resource name="sinBassSampleSetPitch" type="RESOURCE"/>
+  <resource name="sinBassSampleGetPitch" type="RESOURCE"/>
+  <resource name="sinBassSampleSetPan" type="RESOURCE"/>
+  <resource name="sinBassSampleGetPan" type="RESOURCE"/>
+</resources>
