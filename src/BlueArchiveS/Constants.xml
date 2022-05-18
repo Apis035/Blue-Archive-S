@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <constants>
   <constant name="pi2" value="6.2831853070"/>
+  <constant name="newline" value="chr(13)+chr(10)"/>
+  <constant name="c_gui" value="make_color_rgb(0, 0, 30)"/>
+  <constant name="c_affi" value="make_color_rgb(110, 200, 255)"/>
+  <constant name="c_title1" value="make_color_rgb(50, 67, 97)"/>
+  <constant name="c_title2" value="make_color_rgb(64, 100, 153)"/>
+  <constant name="bgPath" value="working_directory + &quot;\data\background\&quot;"/>
+  <constant name="cgPath" value="working_directory + &quot;\data\background\cs\&quot;"/>
+  <constant name="bgmPath" value="working_directory + &quot;\data\sound\bgm\&quot;"/>
+  <constant name="sfxPath" value="working_directory + &quot;\data\sound\sfx\&quot;"/>
+  <constant name="voicePath" value="working_directory + &quot;\data\sound\voice\&quot;"/>
   <constant name="em_none" value="0"/>
   <constant name="em_angry" value="1"/>
   <constant name="em_chat" value="2"/>
