@@ -17,7 +17,7 @@
 
 var _scale;
 
-//Scale
+//Scale with base resolution
 _scale = scale * global.GameScale
 
 //Background
