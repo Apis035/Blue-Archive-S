@@ -6,4 +6,3 @@ if exist BlueArchiveS.gmk (
 	del BlueArchiveS.gmk
 )
 src\Tool\gmksplit src\BlueArchiveS BlueArchiveS.gmk
-pause
