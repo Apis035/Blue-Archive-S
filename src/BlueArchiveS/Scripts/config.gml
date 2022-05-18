@@ -1,33 +1,42 @@
-//Game config
-global.GameTitle = "Blue Archive S"
-global.GameScale = 1920 / 1280
-_scene = "scene01"
+//Game configuration
+global.DisplayWidth   = display_get_width()
+global.DisplayHeight  = display_get_height()
+global.BaseResolution = 1080
+global.GameScale      = global.BaseResolution / 720
+/*
+    Base resolutions:
+    - 2560 x 1440
+    - 1920 x 1080
+    - 1366 x 768
+    - 1280 x 720
+*/
 
-//Volume
+global.GameTitle = "Blue Archive S"
+global.Scene     = "scene01"
+
 global.BgmVolume = .3
 global.SfxVolume = 1
 
-//Colors
-globalvar c_gui, c_affi, c_title1, c_title2;
-c_gui    = make_color_rgb(0, 0, 30)
-c_affi   = make_color_rgb(110, 200, 255)
-c_title1 = make_color_rgb(50, 67, 97)
-c_title2 = make_color_rgb(64, 100, 153)
+global.TextboxAlpha = .6
+global.TextboxSpeed = 1
 
-//Data file path
-bgPath    = working_directory + "\data\background\"
-cgPath    = working_directory + "\data\background\cs\"
-bgmPath   = working_directory + "\data\sound\bgm\"
-sfxPath   = working_directory + "\data\sound\sfx\"
-voicePath = working_directory + "\data\sound\voice\"
-
+//I'm setting windows' scaling to 125%, so game maker font also got scaled to 125%.
+//Will use this later to render the font natively with base resoution so it doesn't blur.
 /*
+var scale;
+scale = 1.25
 
-NotoSans16Bold - 20
-NotoSans20 - 26
-NotoSans20Bold - 26
-NotoSans26Bold - 32
-NotoSans30Bold - 36
-NotoSans40Bold - 46
-
+if scale = 1 {
+    global.FontNS16B = font_add('Noto Sans', 20, 1, 0, 32, 127)
+    global.FontNS20  = font_add('Noto Sans', 26, 0, 0, 32, 127)
+    global.FontNS26B = font_add('Noto Sans', 32, 1, 0, 32, 127)
+    global.FontNS30B = font_add('Noto Sans', 36, 1, 0, 32, 127)
+    global.FontNS40B = font_add('Noto Sans', 56, 1, 0, 32, 127)
+} else if scale = 1.25 {
+    global.FontNS16B = font_add('Noto Sans', 16, 1, 0, 32, 127)
+    global.FontNS20  = font_add('Noto Sans', 20, 0, 0, 32, 127)
+    global.FontNS26B = font_add('Noto Sans', 26, 1, 0, 32, 127)
+    global.FontNS30B = font_add('Noto Sans', 30, 1, 0, 32, 127)
+    global.FontNS40B = font_add('Noto Sans', 40, 1, 0, 32, 127)
+}
 */
