@@ -17,8 +17,7 @@
 if wait &gt; 0
     wait -= 1
 
-if pending or wait or op[label, step] = ""
-    exit
+if pending or wait or op[label, step] = '' exit
 
 //Parse and execute scene script
 do {
@@ -30,27 +29,27 @@ do {
     switch op[label, step] {
 
     // --- General ---
-    case "tit":
+    case 'tit':
         Title.title1 = arg1
         Title.title2 = arg2
         pending = true
         break
 
-    case "loc":
+    case 'loc':
         Location.location = arg1
         break
 
-    case "wai":
+    case 'wai':
         wait = arg1
         break
-    
+
     // --- Branching ---
-    case "lj":
+    case 'lj':
         label = arg1
         step  = 0
         break
 
-    case "ch":
+    case 'ch':
         Choice.choice[0] = arg1
         Choice.choice[1] = arg2
         Choice.choice[2] = arg3
@@ -58,83 +57,83 @@ do {
         break
 
     // --- Background ---
-    case "bg":
+    case 'bg':
         BG.background = arg1
         BG.scale      = BG.scaleTo
         break
 
-    case "bfi":
+    case 'bfi':
         BG.alphaTo  = 1
         BG.alphaSpd = arg1
         break
 
-    case "bfo":
+    case 'bfo':
         BG.alphaTo  = 0
         BG.alphaSpd = arg1
         break
 
-    case "bsc":
+    case 'bsc':
         BG.scaleTo  = arg1
         BG.scaleSpd = arg2
         break
 
-    case "bmv":
+    case 'bmv':
         BG.xTo     = arg1
         BG.yTo     = arg2
         BG.moveSpd = arg3
         break
 
-    case "bpf":
+    case 'bpf':
         BG.perform = arg1
         break
 
     // --- Character ---
-    case "cfi":
+    case 'cfi':
         arg1.alphaTo  = 1
         arg1.alphaSpd = arg2
         break
 
-    case "cfo":
+    case 'cfo':
         arg1.alphaTo  = 0
         arg1.alphaSpd = arg2
         break
 
-    case "csc":
+    case 'csc':
         arg1.scaleTo  = arg2
         arg1.scaleSpd = arg3
         break
 
-    case "cmv":
+    case 'cmv':
         arg1.xTo     = arg2
         arg1.moveSpd = arg3
         break
 
-    case "cex":
+    case 'cex':
         arg1.expr = arg2
         break
 
-    case "cem":
-        with arg1 emReset()
+    case 'cem':
+        with arg1 emNone()
         arg1.em = arg2
         sinBassSamplePlay(emSfx[arg2])
         break
 
-    case "cpf":
+    case 'cpf':
         arg1.perform = arg2
         break
 
     // --- Textbox ---
-    case "tfi":
+    case 'tfi':
         Textbox.alphaTo  = 1
         Textbox.alphaSpd = arg1
         break
 
-    case "tfo":
+    case 'tfo':
         Textbox.alphaTo  = 0
         Textbox.alphaSpd = arg1
         break
 
-    case "say":
+    case 'say':
         if Textbox.focus with Character {
             focus = true
             if name != other.arg1
@@ -146,13 +145,13 @@ do {
         pending = true
         break
 
-    case "foc":
-        Textbox.focus = !Textbox.focus
+    case 'foc':
+        Textbox.focus = arg1
         with Character focus = true
         break
 
     // --- Sound ---
-    case "mus":
+    case 'mus':
         if arg1 &gt; 0 {
             sinBassStreamLoop(arg1)
             sinBassStreamSetVolume(arg1, 0)
@@ -171,13 +170,13 @@ do {
         }
         break
 
-    case "sfx":
+    case 'sfx':
         sinBassSamplePlay(arg1)
         sinBassSampleSetVolume(arg1, global.SfxVolume)
         break
 
     // --- Screen ---
-    case "sfw":
+    case 'sfw':
         if Screen.alpha = 1
             break
         Screen.color    = c_white
@@ -186,7 +185,7 @@ do {
         pending = true
         break
 
-    case "sfb":
+    case 'sfb':
         if Screen.alpha = 1
             break
         Screen.color    = c_black
@@ -195,7 +194,7 @@ do {
         pending = true
         break
 
-    case "sfn":
+    case 'sfn':
         if Screen.alpha = 0
             break
         Screen.alphaTo  = 0
@@ -204,18 +203,16 @@ do {
         break
     }
 
-    //Debug: Log the currently processed command
-    if global.Debug {
-        var str; str =
-            "[" + string(label) + ", " + string(step) + "] " +
-            string(op[label, step]) + " | " +
-            string(a1[label, step]) + " | " +
-            string(a2[label, step]) + " | " +
-            string(a3[label, step])
-        //room_caption = "Blue Archive S " + str
-        log(str)
-    }
-    
+    //Log the currently processed command
+    var str; str =
+        '[' + string(label) + ', ' + string(step) + '] ' +
+        string(op[label, step]) + ' | ' +
+        string(a1[label, step]) + ' | ' +
+        string(a2[label, step]) + ' | ' +
+        string(a3[label, step])
+
+    log(str)
+
     //Next step
     step += 1
 
