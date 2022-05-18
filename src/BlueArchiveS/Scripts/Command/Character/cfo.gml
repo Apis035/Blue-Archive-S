@@ -1,4 +1,4 @@
-op[label, step] = "cfo"
+op[label, step] = 'cfo'
 a1[label, step] = argument0
 a2[label, step] = argument1/100
 step += 1

@@ -1,3 +1,3 @@
-op[label, step] = "tfo"
+op[label, step] = 'tfo'
 a1[label, step] = argument0/100
 step += 1

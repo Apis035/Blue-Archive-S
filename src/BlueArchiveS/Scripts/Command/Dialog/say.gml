@@ -7,9 +7,9 @@ i = 2 repeat 3 {
     i -= 1
 } i = i + 1
 
-name = ""
-affi = ""
-text = ""
+name = ''
+affi = ''
+text = ''
 
 switch i {
 case 1:
@@ -34,7 +34,7 @@ case 3:
     break
 }
 
-op[label, step] = "say"
+op[label, step] = 'say'
 a1[label, step] = name
 a2[label, step] = affi
 a3[label, step] = text
