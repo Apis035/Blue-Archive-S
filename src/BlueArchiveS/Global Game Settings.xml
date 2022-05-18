@@ -8,7 +8,7 @@
     <colorOutsideRoom>000000</colorOutsideRoom>
   </graphics>
   <windowing>
-    <startFullscreen>true</startFullscreen>
+    <startFullscreen>false</startFullscreen>
     <dontDrawBorder>false</dontDrawBorder>
     <allowWindowResize>false</allowWindowResize>
     <alwaysOnTop>false</alwaysOnTop>
