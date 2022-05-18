@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="emReset" type="RESOURCE"/>
+  <resource name="emNone" type="RESOURCE"/>
+  <resource name="emAngry" type="RESOURCE"/>
+  <resource name="emChat" type="RESOURCE"/>
   <resource name="emDot" type="RESOURCE"/>
   <resource name="emExclaim" type="RESOURCE"/>
   <resource name="emHeart" type="RESOURCE"/>
@@ -11,4 +13,5 @@
   <resource name="emSurprise" type="RESOURCE"/>
   <resource name="emSweat" type="RESOURCE"/>
   <resource name="emTwinkle" type="RESOURCE"/>
+  <resource name="emUpset" type="RESOURCE"/>
 </resources>

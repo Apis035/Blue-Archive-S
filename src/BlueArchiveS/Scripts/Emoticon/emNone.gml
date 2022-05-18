@@ -1,7 +1,6 @@
-em      = em_none
-emStage = 0
-emCycle = 0
-
+em       = em_none
+emStage  = 0
+emCycle  = 0
 emX      = 0
 emY      = 0
 emAngle  = 0

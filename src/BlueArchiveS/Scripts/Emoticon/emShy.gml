@@ -4,7 +4,7 @@ if emCycle = 0 {
 }
 
 draw_sprite_ext(sEmBaloon, 0, x-160, y, .7, .7, 0, c_white, emAlpha)
-draw_sprite_ext(sEmShy, 0, x-230, y-70, emScaleX, emScaleX, emAngle, c_white, emAlpha)
+draw_sprite_ext(sEmShy,    0, x-230, y-70, emScaleX, emScaleX, emAngle, c_white, emAlpha)
 
 emScaleX = lerp(emScaleX, .7, .05)
 
@@ -21,5 +21,5 @@ else
 if emStage > 4 {
     emAlpha = approach(emAlpha, 0, 0.15)
     if emAlpha = 0
-        emReset()
+        emNone()
 }

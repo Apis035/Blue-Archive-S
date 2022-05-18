@@ -14,4 +14,4 @@ if emStage = 3
     emAlpha = approach(emAlpha, 0, 0.15)
 
 if emStage = 4
-    emReset()
+    emNone()

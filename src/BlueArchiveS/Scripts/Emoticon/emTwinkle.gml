@@ -5,9 +5,9 @@ if emCycle = 0 and emStage = 0 {
     emScaleZ = .2
 }
 
-draw_sprite_ext(sEmTwinkle, 0, x - 123, y - 95, .2 + emScaleX, .2 + emScaleX, 0, c_white, emAlpha)
-draw_sprite_ext(sEmTwinkle, 0, x - 155, y - 60, .3 + emScaleY, .3 + emScaleY, 0, c_white, emAlpha)
-draw_sprite_ext(sEmTwinkle, 0, x - 110, y - 40, .1 + emScaleZ, .1 + emScaleZ, 0, c_white, emAlpha)
+draw_sprite_ext(sEmTwinkle, 0, x-123, y-95, .2 + emScaleX, .2 + emScaleX, 0, c_white, emAlpha)
+draw_sprite_ext(sEmTwinkle, 0, x-155, y-60, .3 + emScaleY, .3 + emScaleY, 0, c_white, emAlpha)
+draw_sprite_ext(sEmTwinkle, 0, x-110, y-40, .1 + emScaleZ, .1 + emScaleZ, 0, c_white, emAlpha)
 
 if emCycle = 20 {
     emCycle  = 0
@@ -30,5 +30,5 @@ if emStage mod 2 {
 if emStage > 10 {
     emAlpha = approach(emAlpha, 0, .15)
     if emAlpha = 0
-        emReset()
+        emNone()
 }
