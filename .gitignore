@@ -1,2 +1,6 @@
-*.gmk
 dev
+logs
+*.log
+*.gmk
+*.gb1
+BlueArchiveS.exe
