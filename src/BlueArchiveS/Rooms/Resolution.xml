@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <room>
   <caption>Blue Archive S</caption>
-  <size height="1080" width="1920"/>
+  <size height="16" width="16"/>
   <grid>
     <isometric>false</isometric>
     <snap x="32" y="32"/>
   </grid>
-  <speed>30</speed>
+  <speed>9999</speed>
   <persistent>false</persistent>
-  <creationCode/>
+  <creationCode>
+</creationCode>
   <backgroundColor>C0C0C0</backgroundColor>
   <drawBackgroundColor>false</drawBackgroundColor>
   <backgrounds>
@@ -93,57 +94,7 @@
       <stretch>false</stretch>
     </backgroundDef>
   </backgrounds>
-  <enableViews>true</enableViews>
-  <views>
-    <view>
-      <visibleOnRoomStart>true</visibleOnRoomStart>
-      <viewInRoom height="1080" width="1920" x="0" y="0"/>
-      <portOnScreen height="1080" width="1920" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-    <view>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
-      <viewInRoom height="480" width="640" x="0" y="0"/>
-      <portOnScreen height="480" width="640" x="0" y="0"/>
-      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
-    </view>
-  </views>
+  <enableViews>false</enableViews>
   <instances>
     <instance>
       <object>Display</object>
