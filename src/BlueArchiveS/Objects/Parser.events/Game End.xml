@@ -13,7 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">sinBassClose()
+        <argument kind="STRING">log('Closing SinBass subsystem...')
+sinBassClose()
+
+log('Game ended.')
 </argument>
       </arguments>
     </action>
