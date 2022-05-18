@@ -20,7 +20,7 @@ case 2:
     j = argument0
     if is_real(j) {
         name = j.name
-        affi = j.affiliation
+        affi = j.affi
     } else {
         name = j
     }
