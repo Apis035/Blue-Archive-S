@@ -13,39 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">global.Debug = false
-
-var i, arg;
-for (i=1; i&lt;=parameter_count() i+=1) {
-    arg = parameter_string(i)
-    
-    if arg = "/d"
-        global.Debug = true
-    
-    if arg = "/c"
-        global.Cheat = true
-}
-
-if debug_mode
-    global.Debug = true
-
-var w, h;
-w = 1440
-h = 810
-
-if global.Debug {
-    room_set_view(Main, 0, true, 0, 0, 1920, 1080, 0, 0, w, h, -1, -1, 0, 0, -1)
-    room_set_view_enabled(Main, true)
-    window_set_fullscreen(false)
-    window_set_size(w, h)
-    
-    logInit()
-    log("Debug mode activated.")
-}
-
-//window_set_size(display_get_width(), display_get_height())
-room_goto_next()
-
+        <argument kind="STRING">gameInit()
 </argument>
       </arguments>
     </action>

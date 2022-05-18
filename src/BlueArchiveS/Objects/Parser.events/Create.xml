@@ -13,14 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//Load config
-config()
-
-//Load SinBass
-sinBassInit()
-currentMusic = 0
-
-//Cache scene resources
+        <argument kind="STRING">//Cache scene resources
 bgList  = ds_map_create()
 bgmList = ds_map_create()
 sfxList = ds_map_create()
@@ -37,9 +30,11 @@ charExpr = ds_map_create()
 charList()
 
 //Preload default resource
+log('Loading default resource...')
 resourceLoad()
 
 //Setup parser
+log('Initializing scene parser...')
 globalvar op, a1, a2, a3, label, step;
 var i, j;
 
@@ -53,13 +48,15 @@ for (i=0; i&lt;10; i+=1) {
 }
 
 //Load scene
-execute_string(_scene + "()")
+log('Loading scene script for ' + global.Scene + '...')
+execute_string(global.Scene + '()')
 
 //Export loaded scene into file
 if global.Debug
     resourceExport()
 
 //Setup components
+log('Setting up game components...')
 instance_create(x, y, Location)
 instance_create(x, y, Title)
 instance_create(x, y, Screen)
@@ -72,6 +69,9 @@ label   = 0
 step    = 1
 wait    = 0
 pending = false
+
+log('Starting scene.' + newline + '------------------------------------------------------------')
+
 </argument>
       </arguments>
     </action>
