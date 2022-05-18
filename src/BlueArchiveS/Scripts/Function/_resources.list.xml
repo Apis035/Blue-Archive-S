@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="build" type="RESOURCE"/>
-  <resource name="logInit" type="RESOURCE"/>
-  <resource name="logEnd" type="RESOURCE"/>
-  <resource name="log" type="RESOURCE"/>
-</resources>
