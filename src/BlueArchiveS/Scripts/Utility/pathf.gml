@@ -1,1 +1,1 @@
-return string_replace_all(argument0, " ", "_") + "." + argument1
+return string_replace_all(argument0, ' ', '_') + '.' + argument1
