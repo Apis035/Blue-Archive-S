@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//Debug
-if !global.Debug
-    exit
+        <argument kind="STRING">if !global.Debug exit
 
 var text;
 text = "Fps: " + string(fps)
