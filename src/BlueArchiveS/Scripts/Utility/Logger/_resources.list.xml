@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="logInit" type="RESOURCE"/>
+  <resource name="log" type="RESOURCE"/>
+  <resource name="logEnd" type="RESOURCE"/>
+</resources>
