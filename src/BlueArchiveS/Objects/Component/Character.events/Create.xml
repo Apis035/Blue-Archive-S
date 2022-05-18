@@ -14,8 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//Character identity
-name = ""
-affi = ""
+name = ''
+affi = ''
 
 //Bodypart sprites
 body  = -1
@@ -27,8 +27,8 @@ extra = -1
 expr    = 0
 exprMax = 0
 
-//Emoticon (WIP)
-emReset()
+//Emoticon
+emNone()
 
 //Perform animation (WIP)
 perform      = 0
@@ -40,8 +40,8 @@ alphaTo  = 0
 alphaSpd = 0
 
 //Scale
-scale      = 1
-scaleTo    = 1
+scale    = 1
+scaleTo  = 1
 scaleSpd = 0
 
 //Position

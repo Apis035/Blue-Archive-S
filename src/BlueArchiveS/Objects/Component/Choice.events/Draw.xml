@@ -19,26 +19,24 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
 for (i=0; i&lt;3; i+=1) {
-    if choice[i] = "" break
+    if choice[i] = '' break
     
     //Hover color
     color = colorNormal
     draw_set_alpha(.8)
     if hover = i {
-        draw_set_alpha(.9)
         color = colorHover
+        draw_set_alpha(.9)
     }
 
     //Button
     draw_set_color(color)
-    draw_roundrect(x-width, y-height+(spacing * i), x+width, y+height+(spacing * i), false)
-    //draw_set_color(c_black)
-    //draw_roundrect(x-width, y-height+(spacing * i), x+width, y+height+(spacing * i), true)
+    draw_roundrect(x-width, y-height+(spacing*i), x+width, y+height+(spacing*i), false)
     
     //Text
     draw_set_color(c_black)
     draw_set_alpha(1)
-    draw_text(x, y+(spacing * i), choice[i])
+    draw_text(x, y+(spacing*i), choice[i])
 }
 </argument>
       </arguments>

@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if location = "" exit
+        <argument kind="STRING">if location = '' exit
 
 //Alpha
 switch stage {
@@ -32,7 +32,7 @@ case 1: //Wait
 case 2: //Fade out
     alpha -= 0.05
     if alpha = 0 {
-        location = ""
+        location = ''
         stage    = 0
         cycle    = 0
     }

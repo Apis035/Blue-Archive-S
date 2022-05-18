@@ -16,8 +16,8 @@
         <argument kind="STRING">init = false
 
 //Alpha
-alpha      = 0
-alphaTo    = 0
+alpha    = 0
+alphaTo  = 0
 alphaSpd = 0
 
 //Textbox size
@@ -28,13 +28,12 @@ border = room_width/6
 nextCycle = 0
 
 //Dialog text
-name     = ""
-affi     = ""
-text     = ""
-drawText = ""
+name     = ''
+affi     = ''
+text     = ''
+drawText = ''
 pos      = 0
 len      = 0
-textSpd  = 0.5
 
 //Character focusing
 focus = false

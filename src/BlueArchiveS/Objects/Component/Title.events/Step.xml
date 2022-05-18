@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if title1 = "" exit
+        <argument kind="STRING">if title1 = '' exit
 
 //Alpha
 switch stage {
@@ -30,8 +30,8 @@ case 1: //Wait
 case 2: //Fade out
     alpha -= 0.05
     if alpha = 0 {
-        title1 = ""
-        title2 = ""
+        title1 = ''
+        title2 = ''
         stage  = 0
         cycle  = 0
         Parser.pending = false

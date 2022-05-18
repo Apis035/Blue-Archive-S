@@ -17,13 +17,11 @@
 
 var _alpha, _scale;
 
-//Focusing
+//Focusing and dim to black
 _alpha = max(0.6, focus) * alpha
-
-//Dim to black
 _alpha = make_color_rgb(255 * _alpha, 255 * _alpha, 255 * _alpha)
 
-//Scale
+//Scale with base resolution
 _scale = scale * global.GameScale
 
 //Halo
@@ -43,22 +41,22 @@ if extra != -1
     draw_sprite_ext(extra, 0, x, y, _scale, _scale, 0, _alpha, 1)
 
 //Emoticon
-/* TODO: Should emoticon scaled with character scaling? */
+//TODO: Character emoticon should scale with character scale
 
 switch em {
-case em_angry:    emReset()   break
-case em_chat:     emReset()   break
-case em_dot:      emDot()     break
-case em_exclaim:  emExclaim() break
-case em_heart:    emHeart()   break
-case em_music:    emMusic()   break
-case em_question: emQuestion()   break
-case em_respond:  emRespond() break
-case em_shy:      emShy()     break
-case em_surprise: emSurprise()   break
-case em_sweat:    emSweat()   break
-case em_twinkle:  emTwinkle()   break
-case em_upset:    emReset()   break
+case em_angry:    emAngry()    break
+case em_chat:     emChat()     break
+case em_dot:      emDot()      break
+case em_exclaim:  emExclaim()  break
+case em_heart:    emHeart()    break
+case em_music:    emMusic()    break
+case em_question: emQuestion() break
+case em_respond:  emRespond()  break
+case em_shy:      emShy()      break
+case em_surprise: emSurprise() break
+case em_sweat:    emSweat()    break
+case em_twinkle:  emTwinkle()  break
+case em_upset:    emUpset()    break
 }
 
 if em != em_none

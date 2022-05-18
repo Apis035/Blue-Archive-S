@@ -19,15 +19,15 @@ if alphaSpd = 0
 else
     alpha = approach(alpha, alphaTo, alphaSpd)
 
-//Clear text when textbox alpha is 0
+//Clear text when textbox is hidden
 if alpha = 0 {
-    name     = ""
-    affi     = ""
-    drawText = ""
+    name     = ''
+    affi     = ''
+    drawText = ''
 }
 
 //Text
-if text = "" exit
+if text = '' exit
 
 if !init {
     init = true
@@ -39,7 +39,7 @@ if !init {
 if mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter) {
     if pos = len {
         init = false
-        text = ""
+        text = ''
         Parser.pending = false
     } else {
         pos = len - 1
@@ -48,7 +48,7 @@ if mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter) {
 
 //Typewriter effect
 if pos &lt; len {
-    pos     += textSpd
+    pos     += global.TextboxSpeed
     drawText = string_copy(text, 0, pos)
 }
 

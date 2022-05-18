@@ -14,8 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//Title
-title1 = ""
-title2 = ""
+title1 = ''
+title2 = ''
 
 //Alpha
 alpha = 0

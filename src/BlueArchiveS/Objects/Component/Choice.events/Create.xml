@@ -22,7 +22,7 @@ y = room_height/3
 hover = -1
 var i;
 for (i=0; i&lt;3; i+=1) {
-    choice[i] = ""
+    choice[i] = ''
     jump[i]   = -1
 }
 

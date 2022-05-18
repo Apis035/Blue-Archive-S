@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">location = ""
+        <argument kind="STRING">location = ''
 
 //Alpha
 alpha = 0

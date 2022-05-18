@@ -13,15 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//Viewer mode
-/*if instance_exists(Viewer) {
-    sprite_index  = body
-    image_xscale  = scale
-    image_yscale  = scale
-    expressionMax = sprite_get_number(face) - 1
-}*/
-
-//Alpha
+        <argument kind="STRING">//Alpha
 if alphaSpd = 0
     alpha = alphaTo
 else

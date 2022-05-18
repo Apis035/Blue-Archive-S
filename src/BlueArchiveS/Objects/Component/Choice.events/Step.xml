@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if choice[0] = "" exit
+        <argument kind="STRING">if choice[0] = '' exit
 
 var i, pos;
 
@@ -22,14 +22,15 @@ if !init {
     init = true
     
     for (i=0; i&lt;3; i+=1) {
-        if choice[i] = "" break
+        if choice[i] = '' break
 
         if string_char_at(choice[i], 1) = '#' {
             pos = 1
-            while string_length(string_digits(string_char_at(choice[i], pos+1))) pos += 1
+            while string_length(string_digits(string_char_at(choice[i], pos + 1)))
+                pos += 1
             
             jump[i]   = real(string_copy(choice[i], 2, pos))
-            choice[i] = string_delete(choice[i], 1, pos+1)
+            choice[i] = string_delete(choice[i], 1, pos + 1)
         } else {
             jump[i] = label
         }
@@ -39,8 +40,8 @@ if !init {
 //Determine which button is currently hovered
 hover = -1
 for (i=0; i&lt;3; i+=1) {
-    if choice[i] = "" break
-    if pointin(mouse_x, mouse_y, x-width, y-height+(spacing * i), x+width, y+height+(spacing * i)) 
+    if choice[i] = '' break
+    if pointin(mouse_x, mouse_y, x-width, y-height+(spacing*i), x+width, y+height+(spacing*i)) 
         hover = i
 }
 
@@ -53,7 +54,7 @@ if mouse_check_button_pressed(mb_left) and hover != -1 {
     Parser.pending = false
 
     for (i=0; i&lt;3; i+=1) {
-        choice[i] = ""
+        choice[i] = ''
         jump[i]   = -1
     }
 }
