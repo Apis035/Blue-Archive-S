@@ -7,5 +7,4 @@
   <resource name="Textbox" type="RESOURCE"/>
   <resource name="Character" type="RESOURCE"/>
   <resource name="BG" type="RESOURCE"/>
-  <resource name="BGM" type="RESOURCE"/>
 </resources>
