@@ -53,7 +53,7 @@ if pos &lt; len {
 }
 
 //Advance icon
-nextCycle += 0.1
+nextCycle += .08
 if nextCycle &gt; pi2
     nextCycle -= pi2
 </argument>
