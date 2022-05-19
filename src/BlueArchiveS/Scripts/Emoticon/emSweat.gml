@@ -1,5 +1,5 @@
 draw_sprite_ext(sEmSweat1, 0, x-100, y-190 + emX, .7, .7, 0, c_white, emAlpha)
-draw_sprite_ext(sEmSweat2, 0, x-70,  y-230 + emY, .7, .7, 0, c_white, emAlpha)
+draw_sprite_ext(sEmSweat2, 0, x-70,  y-240 + emY, .7, .7, 0, c_white, emAlpha)
 
 emX = lerp(emX, 100, 0.1)
 emY = lerp(emY, 120, 0.1)
