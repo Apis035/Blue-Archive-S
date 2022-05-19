@@ -8,7 +8,8 @@
   </grid>
   <speed>60</speed>
   <persistent>false</persistent>
-  <creationCode>instance_create(0, 0, Parser)</creationCode>
+  <creationCode>
+</creationCode>
   <backgroundColor>000000</backgroundColor>
   <drawBackgroundColor>true</drawBackgroundColor>
   <backgrounds>
@@ -94,7 +95,14 @@
     </backgroundDef>
   </backgrounds>
   <enableViews>false</enableViews>
-  <instances/>
+  <instances>
+    <instance>
+      <object>Parser</object>
+      <position x="0" y="0"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+  </instances>
   <tiles/>
   <editorSettings remember="false"/>
 </room>
