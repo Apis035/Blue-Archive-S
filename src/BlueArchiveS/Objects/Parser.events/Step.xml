@@ -119,7 +119,8 @@ do {
         break
 
     case 'cpf':
-        arg1.perform = arg2
+        with arg1 pfNone()
+        arg1.pf = arg2
         break
 
     // --- Textbox ---

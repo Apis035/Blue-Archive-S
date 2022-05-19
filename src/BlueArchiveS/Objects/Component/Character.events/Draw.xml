@@ -15,7 +15,18 @@
       <arguments>
         <argument kind="STRING">if alpha = 0 exit
 
-var _alpha, _scale;
+var _x, _y, _alpha, _scale;
+
+//Perform animation
+_x = x + pfX
+_y = y + pfY
+
+switch pf {
+case pf_nod:    pfNod() break
+case pf_shake:  pfShake() break
+case pf_shiver: pfShiver() break
+case pf_jump:   pfJump() break
+}
 
 //Focusing and dim to black
 _alpha = max(0.6, focus) * alpha
@@ -26,19 +37,19 @@ _scale = scale * global.GameScale
 
 //Halo
 if halo != -1
-    draw_sprite_ext(halo, 0, x, y + sin(haloCycle)*4 * _scale, _scale, _scale, 0, _alpha, 1)
+    draw_sprite_ext(halo, 0, _x, _y + sin(haloCycle)*4 * _scale, _scale, _scale, 0, _alpha, 1)
 
 //Body
 if body != -1
-    draw_sprite_ext(body, 0, x, y, _scale, _scale, 0, _alpha, 1)
+    draw_sprite_ext(body, 0, _x, _y, _scale, _scale, 0, _alpha, 1)
 
 //Face
 if face != -1
-    draw_sprite_ext(face, expr, x, y, _scale, _scale, 0, _alpha, 1)
+    draw_sprite_ext(face, expr, _x, _y, _scale, _scale, 0, _alpha, 1)
 
 //Extra
 if extra != -1
-    draw_sprite_ext(extra, 0, x, y, _scale, _scale, 0, _alpha, 1)
+    draw_sprite_ext(extra, 0, _x, _y, _scale, _scale, 0, _alpha, 1)
 
 //Emoticon
 //TODO: Character emoticon should scale with character scale
@@ -59,6 +70,7 @@ case em_twinkle:  emTwinkle()  break
 case em_upset:    emUpset()    break
 }
 
+//Cycle emoticon
 if em != em_none
     emCycle += 1
 </argument>

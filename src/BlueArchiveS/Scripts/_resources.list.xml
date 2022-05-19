@@ -9,6 +9,7 @@
   <resource name="sceneTest" type="RESOURCE"/>
   <resource name="scene01" type="RESOURCE"/>
   <resource name="Emoticon" type="GROUP"/>
+  <resource name="Perform" type="GROUP"/>
   <resource name="Command" type="GROUP"/>
   <resource name="Utility" type="GROUP"/>
   <resource name="SinBass" type="GROUP"/>

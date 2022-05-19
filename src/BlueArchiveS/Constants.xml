@@ -25,9 +25,10 @@
   <constant name="em_sweat" value="11"/>
   <constant name="em_twinkle" value="12"/>
   <constant name="em_upset" value="13"/>
-  <constant name="pf_nod" value="0"/>
-  <constant name="pf_shake" value="1"/>
-  <constant name="pf_shake2" value="2"/>
-  <constant name="pf_down" value="3"/>
-  <constant name="pf_jump" value="4"/>
+  <constant name="pf_none" value="0"/>
+  <constant name="pf_nod" value="1"/>
+  <constant name="pf_shake" value="2"/>
+  <constant name="pf_shiver" value="3"/>
+  <constant name="pf_down" value="4"/>
+  <constant name="pf_jump" value="5"/>
 </constants>

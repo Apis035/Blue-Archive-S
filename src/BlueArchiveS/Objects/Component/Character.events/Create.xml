@@ -30,9 +30,8 @@ exprMax = 0
 //Emoticon
 emNone()
 
-//Perform animation (WIP)
-perform      = 0
-performCycle = 0
+//Perform animation
+pfNone()
 
 //Alpha
 alpha    = 0
