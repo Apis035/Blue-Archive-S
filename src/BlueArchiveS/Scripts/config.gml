@@ -18,7 +18,7 @@ global.BgmVolume = .3
 global.SfxVolume = 1
 
 global.TextboxAlpha = .6
-global.TextboxSpeed = 1
+global.TextboxSpeed = .5
 
 //I'm setting windows' scaling to 125%, so game maker font also got scaled to 125%.
 //Will use this later to render the font natively with base resoution so it doesn't blur.
