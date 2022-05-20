@@ -20,6 +20,12 @@
 draw_set_alpha(alpha)
 draw_set_color(color)
 draw_rectangle(0, 0, room_width, room_height, false)
+
+if con {
+    drawset(fa_left, fa_middle, c_white, conAlpha)
+    draw_set_font(NotoSans40Bold)
+    draw_text(room_width - 200 - conX, room_height - 140, 'To Be Continued...')
+}
 </argument>
       </arguments>
     </action>

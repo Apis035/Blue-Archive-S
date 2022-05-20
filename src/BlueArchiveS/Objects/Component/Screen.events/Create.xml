@@ -21,6 +21,12 @@ alpha     = 0
 alphaTo   = 0
 alphaPrev = 0
 alphaSpd  = 0
+
+//To be continued
+con      = false
+conX     = 0
+conCycle = 0
+conAlpha = 0
 </argument>
       </arguments>
     </action>

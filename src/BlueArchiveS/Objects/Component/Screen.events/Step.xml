@@ -25,6 +25,27 @@ if alphaTo != alphaPrev {
         Parser.pending = false
     }
 }
+
+//To be continued
+if !con exit
+
+conX = lerp(conX, 540, .06)
+if conX &gt; 500 {
+    conCycle = approach(conCycle, 120, 1)
+    if conCycle = 120 {
+        conAlpha = approach(conAlpha, 0, .05)
+        if conAlpha = 0 {
+            con      = false
+            conX     = 0
+            conCycle = 0
+            conAlpha = 1
+            Parser.pending = false
+            alphaTo  = 1
+        }
+    }
+} else {
+    conAlpha = approach(conAlpha, 1, .05)
+}
 </argument>
       </arguments>
     </action>
