@@ -3,7 +3,7 @@ if emCycle = 0 and emStage = 0
 
 draw_sprite_ext(sEmNote, 0, x-40 - emX, y-80 - emY, emScaleX, emScaleX, emAngle, c_white, emAlpha)
 
-emX = lerp(emX, 140, .03)
+emX = lerp(emX, 160, .03)
 emY = lerp(emY, 10, .01)
 
 emScaleX = lerp(emScaleX, .8, .05)
