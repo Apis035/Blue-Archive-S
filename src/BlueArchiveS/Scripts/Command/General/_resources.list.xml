@@ -3,4 +3,6 @@
   <resource name="tit" type="RESOURCE"/>
   <resource name="loc" type="RESOURCE"/>
   <resource name="wai" type="RESOURCE"/>
+  <resource name="tbc" type="RESOURCE"/>
+  <resource name="fin" type="RESOURCE"/>
 </resources>

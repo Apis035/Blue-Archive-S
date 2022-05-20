@@ -2,5 +2,6 @@
 <resources>
   <resource name="logInit" type="RESOURCE"/>
   <resource name="log" type="RESOURCE"/>
+  <resource name="logW" type="RESOURCE"/>
   <resource name="logEnd" type="RESOURCE"/>
 </resources>
