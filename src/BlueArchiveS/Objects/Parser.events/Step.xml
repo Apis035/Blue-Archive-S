@@ -42,6 +42,15 @@ do {
     case 'wai':
         wait = arg1
         break
+    
+    case 'tbc':
+        Screen.con = true
+        pending = true
+        break
+    
+    case 'fin':
+        pending = true
+        break
 
     // --- Branching ---
     case 'lj':
@@ -84,7 +93,8 @@ do {
         break
 
     case 'bpf':
-        BG.perform = arg1
+        with BG pfNone()
+        BG.pf = arg1
         break
 
     // --- Character ---
@@ -181,7 +191,7 @@ do {
         if Screen.alpha = 1
             break
         Screen.color    = c_white
-        Screen.alphaTo  = 1
+        Screen.alphaTo  = arg2
         Screen.alphaSpd = arg1
         pending = true
         break
@@ -190,7 +200,7 @@ do {
         if Screen.alpha = 1
             break
         Screen.color    = c_black
-        Screen.alphaTo  = 1
+        Screen.alphaTo  = arg2
         Screen.alphaSpd = arg1
         pending = true
         break
