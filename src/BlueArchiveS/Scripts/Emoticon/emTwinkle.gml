@@ -2,7 +2,7 @@ if emCycle = 0 and emStage = 0 {
     emAlpha  = 0
     emScaleX = .2
     emScaleY = 0
-    emScaleZ = .2
+    emScaleZ = .1
 }
 
 draw_sprite_ext(sEmTwinkle, 0, x-123, y-95, .2 + emScaleX, .2 + emScaleX, 0, c_white, emAlpha)
