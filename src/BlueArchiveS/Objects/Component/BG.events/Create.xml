@@ -19,6 +19,9 @@ background = -1
 //Darken background when title is active
 alphaDim = 0.6
 
+//Perform animation
+pfNone()
+
 //Alpha
 alpha    = 0
 alphaTo  = 0

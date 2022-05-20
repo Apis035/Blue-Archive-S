@@ -20,8 +20,16 @@ var _scale;
 //Scale with base resolution
 _scale = scale * global.GameScale
 
+//Perform animation
+switch pf {
+case pf_nod:    pfNod() break
+case pf_shake:  pfShake() break
+case pf_shiver: pfShiver() break
+case pf_jump:   pfJump() break
+}
+
 //Background
-draw_sprite_ext(background, 0, x, y, _scale, _scale, 0, c_white, alpha)
+draw_sprite_ext(background, 0, x + pfX, y + pfY, _scale, _scale, 0, c_white, alpha)
 </argument>
       </arguments>
     </action>
