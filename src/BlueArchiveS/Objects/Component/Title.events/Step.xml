@@ -24,7 +24,7 @@ case 0: //Fade in
 
 case 1: //Wait
     cycle += 1
-    if cycle = 120 stage = 2
+    if cycle = 210 stage = 2
     break
 
 case 2: //Fade out
