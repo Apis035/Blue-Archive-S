@@ -6,6 +6,14 @@ This is a hobby project that I do for fun. This was started when I wanted to try
 
 I have no skill on writing story, doing art, or designing sound, so I used Blue Archive assets for it as Blue Archive fits really well as a visual novel game.
 
+# Playing
+
+Go to [Releases](https://github.com/Apis035/Blue-Archive-S/releases) to get the prebuild files. Open the assets dropdown and make sure you downloaded the `BlueArchiveS.zip` file instead of the source code zip.
+
+Extract the folder from inside the zip file, open `BA.exe` to play.
+
+Currently the game doesn't have proper menu, simply press `esc` button if you want to quit.
+
 # Goals
 
 The current goal of this project are:
