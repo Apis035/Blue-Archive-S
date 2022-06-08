@@ -11,10 +11,12 @@ global.GameScale      = global.BaseResolution / 720
     - 1280 x 720
 */
 
-global.GameTitle = "Blue Archive S"
-global.Scene     = "scene01"
+global.GameTitle   = "Blue Archive S"
+global.InfoMessage = "Apis035#v0.0.3 / 06.08.2022"
 
-global.BgmVolume = .3
+global.Scene = ""
+
+global.BgmVolume = .4
 global.SfxVolume = 1
 
 global.TextboxAlpha = .6
