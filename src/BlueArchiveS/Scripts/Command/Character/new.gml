@@ -2,6 +2,8 @@ var name, i;
 name = argument0
 i = instance_create(x, y, Character)
 
+if name = "" return i
+
 i.name  = ds_map_find_value(charName, name)
 i.affi  = ds_map_find_value(charAffi, name)
 i.body  = ds_map_find_value(charBody, name)
