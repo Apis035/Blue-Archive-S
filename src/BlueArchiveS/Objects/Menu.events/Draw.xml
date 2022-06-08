@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Draw sidebar
+draw_set_alpha(.5)
+draw_set_color(sidebarColor)
+draw_rectangle(0, 0, sidebarWidth, room_height, false)
+
+//Draw title
+x = sidebarWidth - 32
+y = 100
+
+draw_set_valign(fa_top)
+draw_set_halign(fa_right)
+draw_set_alpha(1)
+draw_set_font(titleFont)
+draw_set_color(c_white)
+draw_text(x, y, title[page])
+
+//Draw button
+y += 150
+index = 0
+draw_set_font(buttonFont)
+
+repeat count[page] {
+    type = itemType[page, index]
+    label = itemLabel[page, index]
+
+    draw_set_color(buttonColor)
+    if index = selectIndex
+        draw_set_color(buttonColorHover)
+    if type = 'dimbutton'
+        draw_set_color(c_ltgray)
+    
+    draw_text(x, y, label)
+    
+    y += spacing
+    index += 1
+}
+
+//Draw version
+draw_set_valign(fa_bottom)
+draw_set_color(c_white)
+draw_set_font(versionFont)
+draw_text(room_width - 8, room_height - 8, global.InfoMessage)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

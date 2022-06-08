@@ -14,14 +14,14 @@
   <drawBackgroundColor>true</drawBackgroundColor>
   <backgrounds>
     <backgroundDef>
-      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
       <backgroundImage/>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>false</tileHorizontally>
       <tileVertically>false</tileVertically>
-      <stretch>false</stretch>
+      <stretch>true</stretch>
     </backgroundDef>
     <backgroundDef>
       <visibleOnRoomStart>false</visibleOnRoomStart>
@@ -97,7 +97,7 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>Parser</object>
+      <object>Menu</object>
       <position x="0" y="0"/>
       <creationCode/>
       <locked>false</locked>

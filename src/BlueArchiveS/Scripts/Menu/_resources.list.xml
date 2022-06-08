@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="createMenu" type="RESOURCE"/>
+  <resource name="setPage" type="RESOURCE"/>
+  <resource name="addButton" type="RESOURCE"/>
+  <resource name="addDimButton" type="RESOURCE"/>
+  <resource name="gotoPage" type="RESOURCE"/>
+  <resource name="gotoScene" type="RESOURCE"/>
+  <resource name="showMsg" type="RESOURCE"/>
+</resources>

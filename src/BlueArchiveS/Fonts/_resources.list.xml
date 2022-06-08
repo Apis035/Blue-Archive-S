@@ -7,4 +7,7 @@
   <resource name="NotoSans30Bold" type="RESOURCE"/>
   <resource name="NotoSans40Bold" type="RESOURCE"/>
   <resource name="System" type="RESOURCE"/>
+  <resource name="MenuTitleF" type="RESOURCE"/>
+  <resource name="MenuButtonF" type="RESOURCE"/>
+  <resource name="MenuVersionF" type="RESOURCE"/>
 </resources>

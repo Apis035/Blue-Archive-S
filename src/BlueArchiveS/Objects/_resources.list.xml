@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="Display" type="RESOURCE"/>
+  <resource name="Menu" type="RESOURCE"/>
   <resource name="Parser" type="RESOURCE"/>
   <resource name="Component" type="GROUP"/>
 </resources>

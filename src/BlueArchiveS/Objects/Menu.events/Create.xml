@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">spacing = 48
+
+titleFont   = MenuTitleF
+buttonFont  = MenuButtonF
+versionFont = MenuVersionF
+
+background_index = background_add(working_directory + '\data\ui\menu_background.jpg', 0, 0)
+
+titleColor       = c_white
+buttonColor      = c_white
+buttonColorHover = make_color(50, 80, 100) //make_color(20, 50, 70)
+
+sidebarWidth = 512
+sidebarColor = make_color(64, 100, 160)
+
+selectIndex = -1
+clicked     = false
+count[0]    = 0
+
+createMenu()
+page = 0
+
+menuBgm = sinBassStreamLoad(bgmPath + 'Theme_02.ogg')
+sinBassStreamSetVolume(menuBgm, global.BgmVolume)
+sinBassStreamPlay(menuBgm)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
