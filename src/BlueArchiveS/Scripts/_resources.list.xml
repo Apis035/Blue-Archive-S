@@ -7,11 +7,15 @@
   <resource name="resourceLoad" type="RESOURCE"/>
   <resource name="resourceExport" type="RESOURCE"/>
   <resource name="sceneTest" type="RESOURCE"/>
+  <resource name="scene00" type="RESOURCE"/>
   <resource name="scene01" type="RESOURCE"/>
+  <resource name="scene02" type="RESOURCE"/>
+  <resource name="scene03" type="RESOURCE"/>
   <resource name="Emoticon" type="GROUP"/>
   <resource name="Perform" type="GROUP"/>
   <resource name="Command" type="GROUP"/>
   <resource name="Utility" type="GROUP"/>
+  <resource name="Menu" type="GROUP"/>
   <resource name="SinBass" type="GROUP"/>
   <resource name="GMConsole" type="GROUP"/>
 </resources>
