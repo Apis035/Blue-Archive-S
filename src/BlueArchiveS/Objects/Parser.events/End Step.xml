@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<event category="OTHER" id="3">
+<event category="STEP" id="2">
   <actions>
     <action id="603" library="1">
       <!--action name: Code-->
@@ -13,13 +13,17 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">log('Game ended.')
+        <argument kind="STRING">if !gameEnd exit
 
-log('Closing SinBass subsystem...')
-sinBassClose()
+for (i=0; i&lt;instance_count; i+=1) {
+    j = instance_id[i]
+    if instance_exists(j) {
+        if j.object_index != Parser with j instance_destroy()
+    }
+}
 
-log('Closing Logger system...')
-logEnd()
+sinBassStreamStop(currentMusic)
+instance_change(Menu, true)
 </argument>
       </arguments>
     </action>

@@ -69,6 +69,7 @@ label   = 0
 step    = 1
 wait    = 0
 pending = false
+gameEnd = false
 
 log('Starting scene.' + newline + '------------------------------------------------------------')
 

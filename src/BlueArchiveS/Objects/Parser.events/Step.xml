@@ -49,6 +49,7 @@ do {
         break
     
     case 'fin':
+        gameEnd = true
         pending = true
         break
 
@@ -99,11 +100,15 @@ do {
 
     // --- Character ---
     case 'cfi':
+        if arg2 = 0
+            arg1.alpha = 1
         arg1.alphaTo  = 1
         arg1.alphaSpd = arg2
         break
 
     case 'cfo':
+        if arg2 = 0
+            arg1.alpha = 0
         arg1.alphaTo  = 0
         arg1.alphaSpd = arg2
         break
@@ -114,6 +119,8 @@ do {
         break
 
     case 'cmv':
+        if arg3 = 0
+            arg1.x = arg2
         arg1.xTo     = arg2
         arg1.moveSpd = arg3
         break
